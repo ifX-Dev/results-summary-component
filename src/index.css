@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --color-red: hsl(0, 100%, 67%);
+  --color-yellow: hsl(39, 100%, 56%);
+  --color-green: hsl(166, 100%, 37%);
+  --color-light-red: hsla(0, 100%, 67%, 0.05);
+  --color-blue: hsl(234, 85%, 45%);
+  --color-light-blue: hsl(221, 100%, 96%);
+  --color-light-lavender: hsl(241, 100%, 89%);
+  --color-dark-gray-blue: hsl(224, 30%, 27%);
+  --color-light-gray-blue: hsla(224, 30%, 27%, 0.3);
+  --color-bckgrnd-from: hsl(252, 100%, 67%);
+  --color-bckgrnd-to: hsl(241, 81%, 54%);
+  --color-circle-from: hsla(256, 72%, 46%, 1);
+  --color-circle-to: hsla(241, 72%, 46%, 0);
+
+  --font-size-lg: 56px;
+  --font-size-md: 24px;
+  --font-size-sm: 16px;
+  --font-main: "Hanken Grotesk", sans-serif;
+
+  --width-main: 375px;
+}
+
+@layer utilities {
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .col-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hanken-lg {
+    font-family: var(--font-main);
+    font-size: var(--font-size-lg);
+    font-weight: 900;
+    line-height: 100%;
+  }
+
+  .hanken-md {
+    font-family: var(--font-main);
+    font-size: var(--font-size-md);
+  }
+
+  .hanken-md {
+    font-family: var(--font-main);
+    font-size: var(--font-size-md);
+    font-weight: 600;
+  }
+
+  .hanken-sm {
+    font-family: var(--font-main);
+    font-size: var(--font-size-sm);
+    color: var(--color-light-blue);
+  }
+}
